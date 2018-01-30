@@ -156,9 +156,9 @@
      	extract_header_tcp_(buf[i], &pd[i]);// sugar@130
      	buf += (&pd[i])->headers[header_instance_tcp_].length;// sugar@131
     }
- //return apply_table_product5(pd, batch_size, tables); //Anmol
+ return apply_table_product5(pd, batch_size, tables); //Anmol
  //return apply_table_product1(pd, batch_size, tables); 
- return apply_table_vlan_ingress_proc(pd, batch_size, tables);// sugar@27
+ //return apply_table_vlan_ingress_proc(pd, batch_size, tables);// sugar@27
  }// sugar@189
  
  void parse_packet(packet_descriptor_t* pd, int batch_size, lookup_table_t** tables) {// sugar@192
